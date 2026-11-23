@@ -1,0 +1,91 @@
+/* 1. Single CSS selector applied to the entire page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcf8f2;
+    color: #3b2f2f;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header & Navigation Styling */
+header {
+    background-color: #4a3525;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav a {
+    color: #f2e3d5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/* 2. Hover Selector */
+nav a:hover {
+    color: #d4a373;
+    text-decoration: underline;
+}
+
+nav a.active {
+    color: #d4a373;
+    border-bottom: 2px solid #d4a373;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* 3. Floating element with margins */
+.about-coffee img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Clearfix for floating layout inside div */
+.about-coffee::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 4. Class selector styling multiple elements */
+.menu-section, .highlight-box {
+    background-color: #ffffff;
+    border: 1px solid #e6ccb2;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 5. Styling div and span tags */
+div.highlight-box {
+    text-align: center;
+}
+
+span.highlight-text {
+    font-weight: bold;
+    color: #b05220;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4a3525;
+    color: #ffffff;
+    margin-top: 40px;
+}

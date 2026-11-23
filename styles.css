@@ -1,0 +1,128 @@
+/* Grid Layout matching the layout diagram */
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar c1 c1"
+        "sidebar c2 c3"
+        "footer footer footer";
+    grid-template-columns: 220px 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    gap: 15px;
+    padding: 15px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+header {
+    grid-area: header;
+    background-color: #9b59b6;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #1abc9c;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+#content-1 {
+    grid-area: c1;
+    background-color: #3498db;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+#content-2 {
+    grid-area: c2;
+    background-color: #2980b9;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+#content-3 {
+    grid-area: c3;
+    background-color: #8e44ad;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #34495e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* 1. CSS Filter Effects (Applies two filters: grayscale & drop-shadow) */
+.filter-box {
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 1rem;
+    filter: grayscale(40%) drop-shadow(4px 4px 6px rgba(0,0,0,0.4));
+    transition: filter 0.3s ease;
+}
+
+.filter-box:hover {
+    filter: grayscale(0%) drop-shadow(6px 6px 10px rgba(0,0,0,0.6));
+}
+
+/* 2. CSS Transform Effects (Applies two transforms: scale & rotate) */
+.transform-box {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transform: scale(1.05) rotate(3deg);
+    transition: transform 0.3s ease;
+}
+
+.transform-box:hover {
+    transform: scale(1.12) rotate(-3deg);
+}
+
+/* 3. CSS Animation */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        background-color: #f1c40f;
+    }
+    50% {
+        transform: scale(1.08);
+        background-color: #e67e22;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #f1c40f;
+    }
+}
+
+.animated-box {
+    color: #2c3e50;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 1rem;
+    background-color: #f1c40f;
+    animation: pulseGlow 2.5s infinite ease-in-out;
+}
