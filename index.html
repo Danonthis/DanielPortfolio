@@ -1,43 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Activity: CSS Transforms and Filters</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Daniel Martinez | Web Design Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 55px 20px;
+            background: #17263d;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        h2 {
+            color: #60a5fa;
+            margin-top: 35px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        a {
+            color: #60a5fa;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>CSS Transforms & Filters Lab</h1>
-    </header>
+<header>
+    <h1>Daniel Martinez</h1>
+    <p>My Web Design Portfolio</p>
+    <p>Welcome! Here are my projects and work from this course.</p>
+</header>
 
-    <aside>
-        <h3>Sidebar</h3>
-        <p>Navigation and controls.</p>
-    </aside>
+<main>
 
-    <section id="content-1">
-        <h2>Content 1: Filter Effects</h2>
-        <p>This section applies multiple CSS filters.</p>
-        <div class="filter-box">Filtered Box</div>
-    </section>
+    <h2>Practice Activities</h2>
+    <div class="projects">
 
-    <section id="content-2">
-        <h2>Content 2: Transform Effects</h2>
-        <p>This section applies multiple transforms.</p>
-        <div class="transform-box">Transformed Box</div>
-    </section>
+        <div class="card">
+            <img src="screenshots/practice1.png" alt="Practice Activity 1">
+            <h3>Practice Activity 1</h3>
+            <p>A Very Simple Web Page</p>
+            <a href="practice1/index.html">View Project</a>
+        </div>
 
-    <section id="content-3">
-        <h2>Content 3: Animation</h2>
-        <p>This section features a continuous keyframe animation.</p>
-        <div class="animated-box">Animated Box</div>
-    </section>
+        <div class="card">
+            <img src="screenshots/practice2.png" alt="Practice Activity 2">
+            <h3>Practice Activity 2</h3>
+            <p>CSS Transforms and Filters</p>
+            <a href="practice2/index.html">View Project</a>
+        </div>
 
-    <footer>
-        <p>&copy; 2026 Daniel</p>
-    </footer>
+        <div class="card">
+            <img src="screenshots/practice3.png" alt="Practice Activity 3">
+            <h3>Practice Activity 3</h3>
+            <p>Extending Bootstrap Starter Examples</p>
+            <a href="practice3/album/index.html">View Project</a>
+        </div>
+
+    </div>
+
+    <h2>Partner Labs</h2>
+    <div class="projects">
+
+        <div class="card">
+            <img src="screenshots/partnerlab1.png" alt="Partner Lab 1">
+            <h3>Partner Lab 1</h3>
+            <p>A Well-Styled Website</p>
+            <a href="partnerlab1/index.html">View Project</a>
+        </div>
+
+        <div class="card">
+            <img src="screenshots/partnerlab2.png" alt="Partner Lab 2">
+            <h3>Partner Lab 2</h3>
+            <p>An Interactive Website</p>
+            <a href="partnerlab2/index.html">View Project</a>
+        </div>
+
+    </div>
+
+    <h2>Individual Assignments</h2>
+    <div class="projects">
+
+        <div class="card">
+            <img src="screenshots/individual1.png" alt="Individual Assignment 1">
+            <h3>Individual Assignment 1</h3>
+            <p>Selling on the Web</p>
+            <a href="individual1/index.html">View Project</a>
+        </div>
+
+        <div class="card">
+            <img src="screenshots/individual2.png" alt="Individual Assignment 2">
+            <h3>Individual Assignment 2</h3>
+            <p>The Record Store</p>
+            <a href="individual2/index.html">View Project</a>
+        </div>
+
+        <div class="card">
+            <img src="screenshots/individual3.png" alt="Individual Assignment 3">
+            <h3>Individual Assignment 3</h3>
+            <p>The Responsive Restaurant</p>
+            <a href="individual3/index.html">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Individual Assignment 4</h3>
+            <p>Final Project - Under Construction</p>
+            <a href="individual4/index.html">View Project</a>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>Daniel Martinez | Web Design Portfolio</p>
+</footer>
 
 </body>
 </html>
